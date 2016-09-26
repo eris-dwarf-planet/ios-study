@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="study_janken" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="janken-item3.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ea-Fs-5SX">
+                                <rect key="frame" x="85" y="40" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4Lb-UW-ePC"/>
+                                    <constraint firstAttribute="height" constant="150" id="eOg-lF-hmR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="janken-item3.png" translatesAutoresizingMaskIntoConstraints="NO" id="qmU-zY-QXB">
+                                <rect key="frame" x="85" y="200" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="RJc-e4-Ld7"/>
+                                    <constraint firstAttribute="width" constant="150" id="Xer-vv-x2v"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-oN-wFr">
+                                <rect key="frame" x="123" y="360" width="75" height="30"/>
+                                <state key="normal" title="最初はグー"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-QC-r7c">
+                                <rect key="frame" x="36" y="490" width="248" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCt-m5-2vr">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="グー"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-ks-Gts">
+                                        <rect key="frame" x="90" y="0.0" width="69" height="30"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="チョキ"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmM-pe-2xA">
+                                        <rect key="frame" x="179" y="0.0" width="70" height="30"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="パー"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="じゃんけんアプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOc-EN-Uxh">
+                                <rect key="frame" x="36" y="430" width="248" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qmU-zY-QXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rq-R4-4iN"/>
+                            <constraint firstItem="1ea-Fs-5SX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="COF-va-evr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wbJ-QC-r7c" secondAttribute="trailing" constant="20" id="Dd6-60-nlw"/>
+                            <constraint firstItem="Cig-oN-wFr" firstAttribute="top" secondItem="qmU-zY-QXB" secondAttribute="bottom" constant="10" id="EjB-3K-Rnm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uOc-EN-Uxh" secondAttribute="trailing" constant="20" id="Hfh-UP-dKh"/>
+                            <constraint firstItem="uOc-EN-Uxh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="JNW-pZ-Q0N"/>
+                            <constraint firstItem="Cig-oN-wFr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LEU-da-4jD"/>
+                            <constraint firstItem="uOc-EN-Uxh" firstAttribute="top" secondItem="Cig-oN-wFr" secondAttribute="bottom" constant="40" id="Pmq-p7-a1V"/>
+                            <constraint firstItem="qmU-zY-QXB" firstAttribute="top" secondItem="1ea-Fs-5SX" secondAttribute="bottom" constant="9" id="QMU-Ko-0er"/>
+                            <constraint firstItem="wbJ-QC-r7c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="URQ-Lx-8gw"/>
+                            <constraint firstItem="1ea-Fs-5SX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="kYm-7W-grb"/>
+                            <constraint firstItem="qmU-zY-QXB" firstAttribute="top" secondItem="1ea-Fs-5SX" secondAttribute="bottom" constant="10" id="qff-Ch-d1s"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="janken-item3.png" width="512" height="512"/>
+    </resources>
+</document>
