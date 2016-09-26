@@ -35,6 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-oN-wFr">
                                 <rect key="frame" x="123" y="360" width="75" height="30"/>
                                 <state key="normal" title="最初はグー"/>
+                                <connections>
+                                    <action selector="tapStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtM-2p-Zun"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-QC-r7c">
                                 <rect key="frame" x="36" y="490" width="248" height="30"/>
@@ -43,16 +46,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="グー"/>
+                                        <connections>
+                                            <action selector="tapGu" destination="BYZ-38-t0r" eventType="touchUpInside" id="bCi-n4-ESG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-ks-Gts">
                                         <rect key="frame" x="90" y="0.0" width="69" height="30"/>
                                         <color key="backgroundColor" red="0.59999999999999998" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="チョキ"/>
+                                        <connections>
+                                            <action selector="tapChoki" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gq-lj-XRC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmM-pe-2xA">
                                         <rect key="frame" x="179" y="0.0" width="70" height="30"/>
                                         <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="パー"/>
+                                        <connections>
+                                            <action selector="tapPa" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ZW-cG-AEq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -80,6 +92,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="computerImageView" destination="1ea-Fs-5SX" id="A6s-Pb-vhf"/>
+                        <outlet property="messageLabel" destination="uOc-EN-Uxh" id="8Bw-Il-2zr"/>
+                        <outlet property="playerImageView" destination="qmU-zY-QXB" id="Q49-d2-bhM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
