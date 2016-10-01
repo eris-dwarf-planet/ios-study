@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="study_disp_color" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-bK-z18">
+                                <rect key="frame" x="16" y="120" width="288" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="mpe-gU-yOv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOd-UX-XLn">
+                                <rect key="frame" x="130" y="224" width="60" height="30"/>
+                                <state key="normal" title="色を見る"/>
+                                <connections>
+                                    <segue destination="0kZ-kw-ITO" kind="presentation" id="lPC-Zj-75Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YOd-UX-XLn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ER-8T-nlB"/>
+                            <constraint firstItem="dXb-bK-z18" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="2nD-TQ-ljG"/>
+                            <constraint firstItem="dXb-bK-z18" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WBi-GO-Crx"/>
+                            <constraint firstItem="dXb-bK-z18" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="if8-bs-zIk"/>
+                            <constraint firstItem="YOd-UX-XLn" firstAttribute="top" secondItem="dXb-bK-z18" secondAttribute="bottom" constant="80" id="tBg-2j-SBF"/>
+                            <constraint firstItem="dXb-bK-z18" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tRN-Oj-UOY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="dXb-bK-z18" id="FUn-av-JBA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="O3Q-Le-2Dr">
+            <objects>
+                <viewController id="0kZ-kw-ITO" customClass="colorViewController" customModule="study_disp_color" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="55o-ah-XFj"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Mn-PM-Akc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oyp-td-rbH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWl-EG-ru4">
+                                <rect key="frame" x="38" y="40" width="30" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="pLE-F3-CTW" kind="unwind" unwindAction="returnTop:" id="mwp-M9-Ez1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OWl-EG-ru4" firstAttribute="leading" secondItem="oyp-td-rbH" secondAttribute="leadingMargin" constant="10" id="7vW-Cd-a9L"/>
+                            <constraint firstItem="OWl-EG-ru4" firstAttribute="top" secondItem="55o-ah-XFj" secondAttribute="bottom" constant="20" id="pvW-We-XV3"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4a-i7-sd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pLE-F3-CTW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="332"/>
+        </scene>
+    </scenes>
+</document>
