@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
+import Social
 
 var str = "Hello, playground"
 
@@ -280,11 +281,81 @@ var myImageView = UIImageView()
 myImageView.image = UIImage(named: "test.png")
 myImageView.contentMode = UIViewContentMode.ScaleToFill
 
+let myWebView = UIWebView()
+let stringURL = "https://www.google.co.jp/"
+if let url = NSURL(string: stringURL) {
+    let urlreq = NSURLRequest(URL: url)
+    myWebView.loadRequest(urlreq)
+}
+
+let myUIImageView = UIImageView()
+let stringURL1 = "https://www.ymori.com/itest/sample.jpg"
+if let url = NSURL(string: stringURL1) {
+    if let data = NSData(contentsOfURL: url) {
+        myUIImageView.image = UIImage(data: data)
+    }
+}
 
 
+if let url = NSURL(string: "http://www.ymori.com/itest/test.txt") {
+    let urlSession = NSURLSession.sharedSession()
+    let task = urlSession.dataTaskWithURL(url, completionHandler: {
+        (data, response, error) in
+        if let nsstr = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+            let str = String(nsstr)
+            print("string=\(str)")
+        }
+    })
+    task.resume()
+}
 
+func onFinish(data: NSData?, res: NSURLResponse?, error: NSError?) {
+    if let nsstr = NSString(data: data!, encoding: NSUTF8StringEncoding) {
+        let str = String(nsstr)
+        print("string=\(str)")
+    }
+}
 
+if let url = NSURL(string: "http://www.ymori.com/itest/test.txt") {
+    let urlSession = NSURLSession.sharedSession()
+    let task = urlSession.dataTaskWithURL(url, completionHandler: onFinish)
+    task.resume()
+}
 
+var jsonString1:String  = "[100, 200]"
+var jsonData1:NSData! = jsonString1.dataUsingEncoding(NSUTF8StringEncoding)
+do {
+    var array = try NSJSONSerialization.JSONObjectWithData(
+        jsonData1,
+        options: NSJSONReadingOptions.MutableContainers) as! NSArray
+    print(array)
+} catch {
+    print("error")
+}
 
+var jsonString2:String  = "{\"A\":100, \"B\":200}"
+var jsonData2:NSData! = jsonString2.dataUsingEncoding(NSUTF8StringEncoding)
+do {
+    var dict = try NSJSONSerialization.JSONObjectWithData(
+        jsonData2,
+        options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+    print(dict)
+} catch {
+    print("error")
+}
 
+func tapTwitter() {
+    let cv = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+    cv.setInitialText("つぶやくよ")
+    let ctl = UIViewController()
+    ctl.presentViewController(cv, animated: true, completion: nil)
+}
+
+func tapShare() {
+    let shareText = "つぶやくよ"
+    let shareItems = [shareText]
+    let avc = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+    let ctl = UIViewController()
+    ctl.presentViewController(avc, animated: true, completion: nil)
+}
 
