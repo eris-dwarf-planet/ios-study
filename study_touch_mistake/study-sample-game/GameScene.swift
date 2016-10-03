@@ -15,7 +15,7 @@ class GameScene: SKScene {
     
     let msgLabel = SKLabelNode(fontNamed: "HiraKakuProN-W3")
     var msg: String = "違う漢字をタッチしよう"
-    let ballMax = 6
+    let ballMax = 15
     var ballList: [SKShapeNode] = []
     let correct = [
         "人", "巳", "氷", "体", "坂",
@@ -37,6 +37,9 @@ class GameScene: SKScene {
 //        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
 //        
 //        self.addChild(myLabel)
+        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        self.physicsBody?.restitution = 1.2
+        
         self.backgroundColor = UIColor.whiteColor()
         msgLabel.text = msg
         msgLabel.fontSize = 36
@@ -110,13 +113,22 @@ class GameScene: SKScene {
             kanji.position = CGPoint(x: 0, y: -25)
             ball.addChild(kanji)
             
-            let action1 = SKAction.moveToY(1300, duration: 0)
-            let wait1 = SKAction.waitForDuration(1.0, withRange: 2.0)
-            let randomSec = Double(randomSource.nextIntWithUpperBound(30)) / 10.0 + 3.0
-            let action2 = SKAction.moveToY(-100, duration: randomSec)
-            let actionS = SKAction.sequence([action1, wait1, action2])
-            let actionR = SKAction.repeatActionForever(actionS)
-            ball.runAction(actionR)
+//            let action1 = SKAction.moveToY(1300, duration: 0)
+//            let wait1 = SKAction.waitForDuration(1.0, withRange: 2.0)
+//            let randomSec = Double(randomSource.nextIntWithUpperBound(30)) / 10.0 + 3.0
+//            let action2 = SKAction.moveToY(-100, duration: randomSec)
+//            let actionS = SKAction.sequence([action1, wait1, action2])
+//            let actionR = SKAction.repeatActionForever(actionS)
+//            ball.runAction(actionR)
+            let wx = randomSource.nextIntWithUpperBound(440) + 100
+            let wy = randomSource.nextIntWithUpperBound(200) + 800
+            ball.position = CGPoint(x: wx, y: wy)
+            ball.physicsBody = SKPhysicsBody(circleOfRadius: 45)
+            ball.physicsBody?.restitution = 1.0
+            
+            let angle = CGFloat(randomSource.nextUniform() * 6.28)
+            ball.zRotation = angle
+
         }
     }
     
