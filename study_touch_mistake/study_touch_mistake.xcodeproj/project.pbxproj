@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AE1E4631DA2751700A5C9DB /* study-sample-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "study-sample-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE1E4631DA2751700A5C9DB /* study_touch_mistake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = study_touch_mistake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE1E4661DA2751700A5C9DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE1E46A1DA2751700A5C9DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		4AE1E46C1DA2751700A5C9DB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		4AE1E45A1DA2751700A5C9DB = {
 			isa = PBXGroup;
 			children = (
-				4AE1E4651DA2751700A5C9DB /* study-sample-game */,
+				4AE1E4651DA2751700A5C9DB /* study_touch_mistake */,
 				4AE1E4641DA2751700A5C9DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		4AE1E4641DA2751700A5C9DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AE1E4631DA2751700A5C9DB /* study-sample-game.app */,
+				4AE1E4631DA2751700A5C9DB /* study_touch_mistake.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4AE1E4651DA2751700A5C9DB /* study-sample-game */ = {
+		4AE1E4651DA2751700A5C9DB /* study_touch_mistake */ = {
 			isa = PBXGroup;
 			children = (
 				4AE1E4661DA2751700A5C9DB /* AppDelegate.swift */,
@@ -64,15 +64,16 @@
 				4AE1E4731DA2751700A5C9DB /* LaunchScreen.storyboard */,
 				4AE1E4761DA2751700A5C9DB /* Info.plist */,
 			);
+			name = study_touch_mistake;
 			path = "study-sample-game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AE1E4621DA2751700A5C9DB /* study-sample-game */ = {
+		4AE1E4621DA2751700A5C9DB /* study_touch_mistake */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AE1E4791DA2751700A5C9DB /* Build configuration list for PBXNativeTarget "study-sample-game" */;
+			buildConfigurationList = 4AE1E4791DA2751700A5C9DB /* Build configuration list for PBXNativeTarget "study_touch_mistake" */;
 			buildPhases = (
 				4AE1E45F1DA2751700A5C9DB /* Sources */,
 				4AE1E4601DA2751700A5C9DB /* Frameworks */,
@@ -82,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = "study-sample-game";
+			name = study_touch_mistake;
 			productName = "study-sample-game";
-			productReference = 4AE1E4631DA2751700A5C9DB /* study-sample-game.app */;
+			productReference = 4AE1E4631DA2751700A5C9DB /* study_touch_mistake.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4AE1E45E1DA2751700A5C9DB /* Build configuration list for PBXProject "study-sample-game" */;
+			buildConfigurationList = 4AE1E45E1DA2751700A5C9DB /* Build configuration list for PBXProject "study_touch_mistake" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AE1E4621DA2751700A5C9DB /* study-sample-game */,
+				4AE1E4621DA2751700A5C9DB /* study_touch_mistake */,
 			);
 		};
 /* End PBXProject section */
@@ -255,8 +256,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "study-sample-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.study-sample-game";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study-touch-mistake";
+				PRODUCT_NAME = study_touch_mistake;
 			};
 			name = Debug;
 		};
@@ -266,15 +267,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "study-sample-game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.study-sample-game";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.study-touch-mistake";
+				PRODUCT_NAME = study_touch_mistake;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AE1E45E1DA2751700A5C9DB /* Build configuration list for PBXProject "study-sample-game" */ = {
+		4AE1E45E1DA2751700A5C9DB /* Build configuration list for PBXProject "study_touch_mistake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AE1E4771DA2751700A5C9DB /* Debug */,
@@ -283,13 +284,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AE1E4791DA2751700A5C9DB /* Build configuration list for PBXNativeTarget "study-sample-game" */ = {
+		4AE1E4791DA2751700A5C9DB /* Build configuration list for PBXNativeTarget "study_touch_mistake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AE1E47A1DA2751700A5C9DB /* Debug */,
 				4AE1E47B1DA2751700A5C9DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

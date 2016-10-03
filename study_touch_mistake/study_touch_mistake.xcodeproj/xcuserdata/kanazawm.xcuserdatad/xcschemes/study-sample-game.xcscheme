@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4AE1E4621DA2751700A5C9DB"
-               BuildableName = "study-sample-game.app"
-               BlueprintName = "study-sample-game"
-               ReferencedContainer = "container:study-sample-game.xcodeproj">
+               BuildableName = "study_touch_mistake.app"
+               BlueprintName = "study_touch_mistake"
+               ReferencedContainer = "container:study_touch_mistake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE1E4621DA2751700A5C9DB"
-            BuildableName = "study-sample-game.app"
-            BlueprintName = "study-sample-game"
-            ReferencedContainer = "container:study-sample-game.xcodeproj">
+            BuildableName = "study_touch_mistake.app"
+            BlueprintName = "study_touch_mistake"
+            ReferencedContainer = "container:study_touch_mistake.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE1E4621DA2751700A5C9DB"
-            BuildableName = "study-sample-game.app"
-            BlueprintName = "study-sample-game"
-            ReferencedContainer = "container:study-sample-game.xcodeproj">
+            BuildableName = "study_touch_mistake.app"
+            BlueprintName = "study_touch_mistake"
+            ReferencedContainer = "container:study_touch_mistake.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4AE1E4621DA2751700A5C9DB"
-            BuildableName = "study-sample-game.app"
-            BlueprintName = "study-sample-game"
-            ReferencedContainer = "container:study-sample-game.xcodeproj">
+            BuildableName = "study_touch_mistake.app"
+            BlueprintName = "study_touch_mistake"
+            ReferencedContainer = "container:study_touch_mistake.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
